@@ -19,7 +19,7 @@ if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
 
-connection= ActiveRecord::Base.establish_connection(
+connection = ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
   :database => "db/costumes.sqlite"
 )
